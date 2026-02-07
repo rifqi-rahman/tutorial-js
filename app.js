@@ -122,9 +122,31 @@
 // ada customer membeli 3 aple dan 2 pisang, dia juga punya kupon diskon 10.000
 // hitung dan log total harga yang harus dibayar customer tersebut setelah diskon!
 
+    // const priceApple = 5000;
+    // const priceBanana = 10000;
+    // const discountCoupon = 10000
+
+    // const customerTotalPrice = (3 * priceApple) + (2 * priceBanana) - discountCoupon;
+    // console.log(customerTotalPrice);
+
+
+// Floating point - bilangan desimal kadang tidak akurat, 
+// karena cara komputer menyimpan bilangan desimal itu dalam bentuk biner
+// contoh:
+
+    // const x = 1.5; //pake titik
+    // const e = 0.1 + 0.2;
+    // console.log(e); // hasilnya 0.30000000000000004, bukan 0.3
+
+// Challenge - soalnya sama seperti sebelumnya, tapi bedanya diskon yang awalnya 10.000, menjadi 10%
+
 const priceApple = 5000;
 const priceBanana = 10000;
-const discountCoupon = 10000
+const totalApple = 3;
+const totalBanana = 2;
+const discountCoupon = 0.1; // 10%
 
-const customerTotalPrice = (3 * priceApple) + (2 * priceBanana) - discountCoupon;
-console.log(customerTotalPrice);
+const total = (totalApple * priceApple) + (totalBanana * priceBanana);
+
+console.log(total - (total * discountCoupon))
+
